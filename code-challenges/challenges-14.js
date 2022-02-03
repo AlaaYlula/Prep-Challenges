@@ -118,7 +118,7 @@ const letterCounter = (str) => {
     // write your code here
     
     let arrayWords = str.split(' ');
-    console.log(arrayWords)
+    //console.log(arrayWords)
     let arrayCount= arrayWords.map((word,index)=>{// aaaa
           let elementarray="";
           let letter = " ";
@@ -144,9 +144,9 @@ const letterCounter = (str) => {
           return elementarray;
     });
 
-    console.log(arrayCount)
+    //console.log(arrayCount)
     let stringresult  = arrayCount.join(' '); 
-    console.log(stringresult)
+    //console.log(stringresult)
     return stringresult;
   }
 
