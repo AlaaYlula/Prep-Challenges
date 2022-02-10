@@ -114,7 +114,9 @@ const vowelsFiltration = (arr) => {
             }
         }
         return 1 ; 
-                  //   return (letter != 'a' || letter != 'e' || letter != 'i' || letter != 'i' || letter != 'u' )
+
+        //2nd:
+        //return !(word.includes('a') ||  word.includes('o') ||   word.includes('e') ||  word.includes('i') ||  word.includes('u'))
     
     });
 return newArray;
