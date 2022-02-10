@@ -53,7 +53,6 @@ const LastWord_2 = (str) => {
 const replaceWords = (str) => {
     // write your code here
     let array = str.split(' ');
-    
     let idx = array.indexOf('I');
     while (idx != -1) {
       array[idx]= 'We';
@@ -69,11 +68,20 @@ const replaceWords = (str) => {
       array[idx2]= 'were';
       idx2 = array.indexOf('was', idx2+ 1);
     }
-
-
     let str_convert=array.join(' ');
-    //console.log(str_convert)
     return str_convert;
+
+    //2nd: Splice : Not work !!!!!!
+    // let array = str.split(' ');
+
+    // array.splice(array.indexOf('I'),1,'We');
+    // array.splice(array.indexOf('am'),1,'are');
+    // array.splice(array.indexOf('was'),1,'were');
+
+    // let str_convert=array.join(' ');
+
+    // return str_convert;
+
 }
 
 // 4) ---------------------
